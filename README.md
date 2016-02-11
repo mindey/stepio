@@ -3,46 +3,13 @@ Asset parser for Step.investables and Step.deliverables in Infinity.
 
 Usage:
 
-```
+```{python}
 >>> import stepio
->>> i = u'programmer person-days: 10~12@1.2h; analyst person-days: 11~45@1.1h; software package: 1@15.453h'
+>>> i = u'programmer person-days: 10~12@50usd; analyst person-days: 11~45@45usd; software package: 1@159.99usd'
 
 >>> stepio.parse(i)
 
-[{'programmer person-days': 
-  {
-    'min_units': '10',
-    'max_units': '12',
-    'f_units': '',
-    'min_price': '1.2',
-    'max_price': '1.2',
-    'f_price': '',
-    'price_unit': 'h'
-    }
-  },
- {'analyst person-days': 
-  {
-    'min_units': '11',
-    'max_units': '45',
-    'f_units': '',
-    'min_price': '1.1',
-    'max_price': '1.1',
-    'f_price': '',
-    'price_unit': 'h'
-    }
- },
- {'software package': 
-  {
-    'min_units': '1',
-    'max_units': '1',
-    'f_units': '',
-    'min_price': '15.453',
-    'max_price': '15.453',
-    'f_price': '',
-    'price_unit': 'h'
-    }
- }
-]
+[{u'programmer person-days': {'max_units': u'12', 'min_units': u'10', 'price_unit': u'usd', 'f_units': '', 'min_price': u'50', 'f_price': '', 'max_price': u'50'}}, {u'analyst person-days': {'max_units': u'45', 'min_units': u'11', 'price_unit': u'usd', 'f_units': '', 'min_price': u'45', 'f_price': '', 'max_price': u'45'}}, {u'software package': {'max_units': u'1', 'min_units': u'1', 'price_unit': u'usd', 'f_units': '', 'min_price': u'159.99', 'f_price': '', 'max_price': u'159.99'}}]
 ```
 
 ```{python}
