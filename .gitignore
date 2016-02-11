@@ -1,6 +1,7 @@
 # General stuff
 # Python bytecode:
 *.py[co]
+/dist
 
 # Packaging files:
 *.egg*
