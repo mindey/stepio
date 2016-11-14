@@ -1,3 +1,4 @@
+[![Travis status](https://img.shields.io/travis/WeFindX/StepIO/master.svg?style=flat)](https://travis-ci.org/WeFindX/StepIO)
 # StepIO
 Asset parser for Step.investables and Step.deliverables in Infinity.
 ```
