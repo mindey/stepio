@@ -46,7 +46,7 @@ class BasicTest(unittest.TestCase):
                             'min_price': u'',
                             'f_price': u'',
                             'max_price': u''}},
-                    {u'solar cell assemblies': 
+                    {u'solar cell assemblies':
                          {'max_units': u'2',
                               'min_units': u'1',
                               'price_unit': u'h',
